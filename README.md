@@ -2,7 +2,7 @@
 Files contain the most commonly used plugins and methods which make Webpack easy to use.
 
 ### helpers.plugins.js
-Collection of useful plugins for Webpack.
+>Collection of useful plugins for Webpack.
   
  * assets-webpack-plugin;
  * awesome-typescript-loader;
@@ -15,4 +15,4 @@ Collection of useful plugins for Webpack.
  * NamedModulesPlugin [inbuilt].
 
 ### helpers.methods.js
-Collection of useful methods for Webpack.
+>Collection of useful methods for Webpack.
