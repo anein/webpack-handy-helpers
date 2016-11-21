@@ -7,6 +7,8 @@
  * - assets-webpack-plugin
  * - html-elements-plugin
  * - webpack-merge
+ * - webpack-md5-hash
+ * - compression-webpack-plugin
  * - ContextReplacementPlugin [inbuilt]
  * - DefinePlugin [inbuilt]
  * - NamedModulesPlugin [inbuilt]
@@ -89,8 +91,40 @@ exports.NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 /**
  * Plugin: webpackMerge
  *
- * @description  Provides a merge function that concatenates arrays and merges objects
+ * @description Provides a merge function that concatenates arrays and merges objects
  *
  * {@link https://github.com/survivejs/webpack-merge}
  */
 exports.webpackMerge = require('webpack-merge');
+
+/**
+ * Plugin: ExternalsPlugin
+ *
+ * @description considers all modules under the local node_modules/ directory as externals.
+ *
+ */
+exports.ExternalsPlugin = require('webpack-externals-plugin');
+
+/**
+ * Plugin: ExtractTextPlugin
+ *
+ * @description Extract text from bundle into a file.
+ */
+exports.ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+/**
+ * Plugin: WebpackMD5Hash
+ *
+ * @description Plugin to replace a standard webpack chunkhash with md5
+ *
+ * {@link https://github.com/erm0l0v/webpack-md5-hash}
+ */
+exports.WebpackMD5Hash = require('webpack-md5-hash');
+/**
+ * Plugin: CompressionPlugin
+ *
+ * @description Prepares compressed versions of assets to serve them with Content-Encoding.
+ *
+ * {@link https://github.com/webpack/compression-webpack-plugin }
+ */
+exports.CompressionPlugin = require('compression-webpack-plugin');
