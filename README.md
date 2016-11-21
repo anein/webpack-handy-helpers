@@ -10,6 +10,8 @@ Files contain the most commonly used plugins and methods which make Webpack easy
  * html-webpack-plugin;
  * html-elements-plugin;
  * webpack-merge;
+ * webpack-md5-hash
+ * compression-webpack-plugin
  * ContextReplacementPlugin [inbuilt];
  * DefinePlugin [inbuilt];
  * NamedModulesPlugin [inbuilt].
